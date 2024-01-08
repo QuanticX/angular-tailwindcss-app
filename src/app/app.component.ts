@@ -12,4 +12,24 @@ import { BouttonComponent } from './boutton/boutton.component';
 })
 export class AppComponent {
   title = 'angular-tailwindcss-app';
+  typography = false;
+  properties = false;
+
+  onHoverTypography($event: any){
+    this.typography = true;
+  }
+
+  onLeftTypography($event: any){
+    this.typography = false;
+  }
+
+  
+  onHoverProperties($event: any){
+    this.properties = true;
+  }
+
+  onLeftProperties($event: any){
+    this.properties = false;
+  }
+
 }
