@@ -23,11 +23,11 @@
   </ul>
   </div>
 </div>
-<div (mouseenter)="onHoverProperties($event)" (mouseleave)="onLeftProperties($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-r-lg text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
+<div (mouseenter)="onHoverProperties($event)" (mouseleave)="onLeftProperties($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
 >Object properties<svg class="w-2.5 h-2.5 ms-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg>
-</button><div *ngIf="properties" class="absolute z-10 bg-white divide-y divide-gray-100 rounded-r-lg shadow w-44 dark:bg-gray-700">
+</button><div *ngIf="properties" class="absolute z-10 bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700">
   <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
     <li>
       <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="borders">Borders</a>
@@ -47,6 +47,103 @@
   </ul>
 </div>
 </div>
+
+<div (mouseenter)="onHoverMetrics($event)" (mouseleave)="onLeftMetrics($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
+  >Object Metrics<svg class="w-2.5 h-2.5 ms-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+  </button><div *ngIf="metrics" class="absolute z-10 bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+      <li>
+        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="width-height">Width and Height</a>
+      </li>
+      <li> 
+        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="padding-marging">Padding and Marging</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="display-position">Display and Position</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="floating-containement">Floating and Containement</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="properties">Properties</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <div (mouseenter)="onHoverLayout($event)" (mouseleave)="onLeftLayout($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
+    >Layout<svg class="w-2.5 h-2.5 ms-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg>
+    </button><div *ngIf="layout" class="absolute z-10 bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="flexbox">Flexbox</a>
+        </li>
+        <li> 
+          <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="grids">Grids</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="box-alignement">Box Alignement</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <div (mouseenter)="onHoverAnimation($event)" (mouseleave)="onLeftAnimation($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
+      >Animation<svg class="w-2.5 h-2.5 ms-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+      </button><div *ngIf="animation" class="absolute z-10 bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="transformations">Transformations</a>
+          </li>
+          <li> 
+            <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="transitions">Transitions</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="animate">Animate</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="filter">Filter</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="blending">Blending</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div (mouseenter)="onHoverOptions($event)" (mouseleave)="onLeftOptions($event)" ><button class=" w-44 text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-r-lg text-sm px-5 py-2.5 text-center inline-flex items-center align-middle dark:bg-blue-600 dark:hover:bg-blue-700 " type="button"
+        >Options<svg class="w-2.5 h-2.5 ms-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+        </button><div *ngIf="options" class="absolute z-10 bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="forms">Forms</a>
+            </li>
+            <li> 
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="tables">Tables</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="svg">SVG</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="screen-readers">Screen readers</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="interactive">Interactive</a>
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="jit">JIT</a>
+            </li>
+          </ul>
+        </div>
+        </div>
 
 
 
